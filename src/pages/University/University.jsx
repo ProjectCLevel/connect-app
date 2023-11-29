@@ -2,23 +2,23 @@ import React from 'react'
 
 function University() {
     return (
-        <section class="table-components">
-            <div class="container-fluid">
-                <div class="title-wrapper pt-30">
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <div class="title">
+        <section className="table-components">
+            <div className="container-fluid">
+                <div className="title-wrapper pt-30">
+                    <div className="row align-items-center">
+                        <div className="col-md-6">
+                            <div className="title">
                                 <h2>Tables</h2>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="breadcrumb-wrapper">
+                        <div className="col-md-6">
+                            <div className="breadcrumb-wrapper">
                                 <nav aria-label="breadcrumb">
-                                    <ol class="breadcrumb">
-                                        <li class="breadcrumb-item">
+                                    <ol className="breadcrumb">
+                                        <li className="breadcrumb-item">
                                             <a href="#0">Dashboard</a>
                                         </li>
-                                        <li class="breadcrumb-item active" aria-current="page">
+                                        <li className="breadcrumb-item active" aria-current="page">
                                             Tables
                                         </li>
                                     </ol>
@@ -28,17 +28,17 @@ function University() {
                     </div>
                 </div>
 
-                <div class="tables-wrapper">
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <div class="card-style mb-30">
-                                <h6 class="mb-10">Data Table</h6>
-                                <p class="text-sm mb-20">
+                <div className="tables-wrapper">
+                    <div className="row">
+                        <div className="col-lg-12">
+                            <div className="card-style mb-30">
+                                <h6 className="mb-10">Data Table</h6>
+                                <p className="text-sm mb-20">
                                     For basic styling—light padding and only horizontal
                                     dividers—use the class table.
                                 </p>
-                                <div class="table-wrapper table-responsive">
-                                    <table class="table">
+                                <div className="table-wrapper table-responsive">
+                                    <table className="table">
                                         <thead>
                                             <tr>
                                                 <th>
@@ -64,59 +64,59 @@ function University() {
                                         <tbody>
                                             <tr>
                                                 <td>
-                                                    <div class="employee-image">
+                                                    <div className="employee-image">
                                                         <img src="assets/images/lead/lead-1.png" alt="" />
                                                     </div>
                                                 </td>
-                                                <td class="min-width">
+                                                <td className="min-width">
                                                     <p>Esther Howard</p>
                                                 </td>
-                                                <td class="min-width">
+                                                <td className="min-width">
                                                     <p><a href="#0">yourmail@gmail.com</a></p>
                                                 </td>
-                                                <td class="min-width">
+                                                <td className="min-width">
                                                     <p>Admin Dashboard Design</p>
                                                 </td>
-                                                <td class="min-width">
-                                                    <span class="status-btn active-btn">Active</span>
+                                                <td className="min-width">
+                                                    <span className="status-btn active-btn">Active</span>
                                                 </td>
                                                 <td>
-                                                    <div class="action">
-                                                        <button class="text-danger">
-                                                            <i class="lni lni-trash-can"></i>
+                                                    <div className="action">
+                                                        <button className="text-danger">
+                                                            <i className="lni lni-trash-can"></i>
                                                         </button>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <div class="employee-image">
+                                                    <div className="employee-image">
                                                         <img src="assets/images/lead/lead-2.png" alt="" />
                                                     </div>
                                                 </td>
-                                                <td class="min-width">
+                                                <td className="min-width">
                                                     <p>D. Jonathon</p>
                                                 </td>
-                                                <td class="min-width">
+                                                <td className="min-width">
                                                     <p><a href="#0">yourmail@gmail.com</a></p>
                                                 </td>
-                                                <td class="min-width">
+                                                <td className="min-width">
                                                     <p>React Dashboard</p>
                                                 </td>
-                                                <td class="min-width">
-                                                    <span class="status-btn active-btn">Active</span>
+                                                <td className="min-width">
+                                                    <span className="status-btn active-btn">Active</span>
                                                 </td>
                                                 <td>
-                                                    <div class="action">
-                                                        <button class="text-danger">
-                                                            <i class="lni lni-trash-can"></i>
+                                                    <div className="action">
+                                                        <button className="text-danger">
+                                                            <i className="lni lni-trash-can"></i>
                                                         </button>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <div class="employee-image">
+                                                    <div className="employee-image">
                                                         <img src="assets/images/lead/lead-3.png" alt="" />
                                                     </div>
                                                 </td>
@@ -130,19 +130,19 @@ function University() {
                                                     <p>Bootstrap Template</p>
                                                 </td>
                                                 <td>
-                                                    <span class="status-btn success-btn">Done</span>
+                                                    <span className="status-btn success-btn">Done</span>
                                                 </td>
                                                 <td>
-                                                    <div class="action">
-                                                        <button class="text-danger">
-                                                            <i class="lni lni-trash-can"></i>
+                                                    <div className="action">
+                                                        <button className="text-danger">
+                                                            <i className="lni lni-trash-can"></i>
                                                         </button>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <div class="employee-image">
+                                                    <div className="employee-image">
                                                         <img src="assets/images/lead/lead-4.png" alt="" />
                                                     </div>
                                                 </td>
@@ -156,19 +156,19 @@ function University() {
                                                     <p>Css Grid Template</p>
                                                 </td>
                                                 <td>
-                                                    <span class="status-btn info-btn">Pending</span>
+                                                    <span className="status-btn info-btn">Pending</span>
                                                 </td>
                                                 <td>
-                                                    <div class="action">
-                                                        <button class="text-danger">
-                                                            <i class="lni lni-trash-can"></i>
+                                                    <div className="action">
+                                                        <button className="text-danger">
+                                                            <i className="lni lni-trash-can"></i>
                                                         </button>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <div class="employee-image">
+                                                    <div className="employee-image">
                                                         <img src="assets/images/lead/lead-5.png" alt="" />
                                                     </div>
                                                 </td>
@@ -182,19 +182,19 @@ function University() {
                                                     <p>Admin Dashboard Design</p>
                                                 </td>
                                                 <td>
-                                                    <span class="status-btn close-btn">Close</span>
+                                                    <span className="status-btn close-btn">Close</span>
                                                 </td>
                                                 <td>
-                                                    <div class="action">
-                                                        <button class="text-danger">
-                                                            <i class="lni lni-trash-can"></i>
+                                                    <div className="action">
+                                                        <button className="text-danger">
+                                                            <i className="lni lni-trash-can"></i>
                                                         </button>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
-                                                    <div class="employee-image">
+                                                    <div className="employee-image">
                                                         <img src="assets/images/lead/lead-6.png" alt="" />
                                                     </div>
                                                 </td>
@@ -208,12 +208,12 @@ function University() {
                                                     <p>Space Template Update</p>
                                                 </td>
                                                 <td>
-                                                    <span class="status-btn active-btn">Active</span>
+                                                    <span className="status-btn active-btn">Active</span>
                                                 </td>
                                                 <td>
-                                                    <div class="action">
-                                                        <button class="text-danger">
-                                                            <i class="lni lni-trash-can"></i>
+                                                    <div className="action">
+                                                        <button className="text-danger">
+                                                            <i className="lni lni-trash-can"></i>
                                                         </button>
                                                     </div>
                                                 </td>

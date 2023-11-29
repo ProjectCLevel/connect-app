@@ -1,29 +1,31 @@
 import React from 'react'
 
-function Header() {
+function Header({ overlay, setOverlay }) {
     return (
-        <header class="header">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-lg-5 col-md-5 col-6">
-                        <div class="header-left d-flex align-items-center">
-                            <div class="menu-toggle-btn mr-15">
-                                <button id="menu-toggle" class="main-btn primary-btn btn-hover">
-                                    <i class="lni lni-chevron-left me-2"></i> Menu
+        <header className="header">
+            <div className="container-fluid">
+                <div className="row">
+                    <div className="col-lg-5 col-md-5 col-6">
+                        <div className="header-left d-flex align-items-center">
+                            <div className="menu-toggle-btn mr-15">
+                                <button id="menu-toggle" className="main-btn primary-btn btn-hover"
+                                    onClick={() => setOverlay(!overlay)}>
+                                    <i class={`lni ${!overlay ? "lni-chevron-left" : "lni-menu"} me-2`}></i>
+                                    Menu
                                 </button>
                             </div>
-                            <div class="header-search d-none d-md-flex">
+                            <div className="header-search d-none d-md-flex">
                                 <form action="#">
                                     <input type="text" placeholder="Search..." />
-                                    <button><i class="lni lni-search-alt"></i></button>
+                                    <button><i className="lni lni-search-alt"></i></button>
                                 </form>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-7 col-md-7 col-6">
-                        <div class="header-right">
-                            <div class="notification-box ml-15 d-none d-md-flex">
-                                <button class="dropdown-toggle" type="button" id="notification" data-bs-toggle="dropdown"
+                    <div className="col-lg-7 col-md-7 col-6">
+                        <div className="header-right">
+                            <div className="notification-box ml-15 d-none d-md-flex">
+                                <button className="dropdown-toggle" type="button" id="notification" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -35,16 +37,16 @@ function Header() {
                                     </svg>
                                     <span></span>
                                 </button>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notification">
+                                <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="notification">
                                     <li>
                                         <a href="#0">
-                                            <div class="image">
+                                            <div className="image">
                                                 <img src="assets/images/lead/lead-6.png" alt="" />
                                             </div>
-                                            <div class="content">
+                                            <div className="content">
                                                 <h6>
                                                     John Doe
-                                                    <span class="text-regular">
+                                                    <span className="text-regular">
                                                         comment on a product.
                                                     </span>
                                                 </h6>
@@ -58,13 +60,13 @@ function Header() {
                                     </li>
                                     <li>
                                         <a href="#0">
-                                            <div class="image">
+                                            <div className="image">
                                                 <img src="assets/images/lead/lead-1.png" alt="" />
                                             </div>
-                                            <div class="content">
+                                            <div className="content">
                                                 <h6>
                                                     Jonathon
-                                                    <span class="text-regular">
+                                                    <span className="text-regular">
                                                         like on a product.
                                                     </span>
                                                 </h6>
@@ -78,8 +80,8 @@ function Header() {
                                     </li>
                                 </ul>
                             </div>
-                            <div class="header-message-box ml-15 d-none d-md-flex">
-                                <button class="dropdown-toggle" type="button" id="message" data-bs-toggle="dropdown"
+                            <div className="header-message-box ml-15 d-none d-md-flex">
+                                <button className="dropdown-toggle" type="button" id="message" data-bs-toggle="dropdown"
                                     aria-expanded="false">
                                     <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -91,13 +93,13 @@ function Header() {
                                     </svg>
                                     <span></span>
                                 </button>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="message">
+                                <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="message">
                                     <li>
                                         <a href="#0">
-                                            <div class="image">
+                                            <div className="image">
                                                 <img src="assets/images/lead/lead-5.png" alt="" />
                                             </div>
-                                            <div class="content">
+                                            <div className="content">
                                                 <h6>Jacob Jones</h6>
                                                 <p>Hey!I can across your profile and ...</p>
                                                 <span>10 mins ago</span>
@@ -106,10 +108,10 @@ function Header() {
                                     </li>
                                     <li>
                                         <a href="#0">
-                                            <div class="image">
+                                            <div className="image">
                                                 <img src="assets/images/lead/lead-3.png" alt="" />
                                             </div>
-                                            <div class="content">
+                                            <div className="content">
                                                 <h6>John Doe</h6>
                                                 <p>Would you mind please checking out</p>
                                                 <span>12 mins ago</span>
@@ -118,10 +120,10 @@ function Header() {
                                     </li>
                                     <li>
                                         <a href="#0">
-                                            <div class="image">
+                                            <div className="image">
                                                 <img src="assets/images/lead/lead-2.png" alt="" />
                                             </div>
-                                            <div class="content">
+                                            <div className="content">
                                                 <h6>Anee Lee</h6>
                                                 <p>Hey! are you available for freelance?</p>
                                                 <span>1h ago</span>
@@ -130,54 +132,54 @@ function Header() {
                                     </li>
                                 </ul>
                             </div>
-                            <div class="profile-box ml-15">
-                                <button class="dropdown-toggle bg-transparent border-0" type="button" id="profile"
+                            <div className="profile-box ml-15">
+                                <button className="dropdown-toggle bg-transparent border-0" type="button" id="profile"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    <div class="profile-info">
-                                        <div class="info">
-                                            <div class="image">
+                                    <div className="profile-info">
+                                        <div className="info">
+                                            <div className="image">
                                                 <img src="assets/images/profile/profile-image.png" alt="" />
                                             </div>
                                             <div>
-                                                <h6 class="fw-500">Adam Joe</h6>
+                                                <h6 className="fw-500">Adam Joe</h6>
                                                 <p>Admin</p>
                                             </div>
                                         </div>
                                     </div>
                                 </button>
-                                <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profile">
+                                <ul className="dropdown-menu dropdown-menu-end" aria-labelledby="profile">
                                     <li>
-                                        <div class="author-info flex items-center !p-1">
-                                            <div class="image">
+                                        <div className="author-info flex items-center !p-1">
+                                            <div className="image">
                                                 <img src="assets/images/profile/profile-image.png" alt="image" />
                                             </div>
-                                            <div class="content">
-                                                <h4 class="text-sm">Adam Joe</h4>
-                                                <a class="text-black/40 dark:text-white/40 hover:text-black dark:hover:text-white text-xs"
+                                            <div className="content">
+                                                <h4 className="text-sm">Adam Joe</h4>
+                                                <a className="text-black/40 dark:text-white/40 hover:text-black dark:hover:text-white text-xs"
                                                     href="#">Email@gmail.com</a>
                                             </div>
                                         </div>
                                     </li>
-                                    <li class="divider"></li>
+                                    <li className="divider"></li>
                                     <li>
                                         <a href="#0">
-                                            <i class="lni lni-user"></i> View Profile
+                                            <i className="lni lni-user"></i> View Profile
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#0">
-                                            <i class="lni lni-alarm"></i> Notifications
+                                            <i className="lni lni-alarm"></i> Notifications
                                         </a>
                                     </li>
                                     <li>
-                                        <a href="#0"> <i class="lni lni-inbox"></i> Messages </a>
+                                        <a href="#0"> <i className="lni lni-inbox"></i> Messages </a>
                                     </li>
                                     <li>
-                                        <a href="#0"> <i class="lni lni-cog"></i> Settings </a>
+                                        <a href="#0"> <i className="lni lni-cog"></i> Settings </a>
                                     </li>
-                                    <li class="divider"></li>
+                                    <li className="divider"></li>
                                     <li>
-                                        <a href="#0"> <i class="lni lni-exit"></i> Sign Out </a>
+                                        <a href="#0"> <i className="lni lni-exit"></i> Sign Out </a>
                                     </li>
                                 </ul>
                             </div>

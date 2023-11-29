@@ -8,7 +8,7 @@ function Home() {
         <>
             <Aside />
 
-            <main class="main-wrapper">
+            <main className="main-wrapper">
                 <Header />
 
                 <University />

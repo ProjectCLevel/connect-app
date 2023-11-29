@@ -2,9 +2,9 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import styled from 'styled-components'
 
-function Aside() {
+function Aside({overlay}) {
     return (
-        <Wrapper className="sidebar-nav-wrapper">
+        <Wrapper className={`sidebar-nav-wrapper ${overlay && "active"}`}>
             <div className="navbar-logo">
                 <a href="index.html">
                     <h2>Connect App</h2>
@@ -41,7 +41,7 @@ function Aside() {
                             </li>
 
                             <li>
-                                <a href="index.html"> Postlar </a>
+                                <NavLink to={"/posts"}> Postlar </NavLink>
                             </li>
                         </ul>
                     </li>
@@ -95,10 +95,7 @@ function Aside() {
                         </a>
                         <ul id="ddmenu_4" className="collapse show dropdown-nav">
                             <li>
-                                <a href="alerts.html"> Foydalanuvchi profili </a>
-                            </li>
-                            <li>
-                                <a href="buttons.html"> Profil sozlamalari </a>
+                                <NavLink to={"/profile"}> Foydalanuvchi profili </NavLink>
                             </li>
                         </ul>
                     </li>
